@@ -1,0 +1,114 @@
+/* Home Container */
+.home-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 6rem 2rem 2rem; /* Add padding-top to account for the fixed navbar */
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url('images111.jpg') no-repeat center center/cover;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+  }
+  
+  .hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-content p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+  }
+  
+  .hero-button {
+    padding: 0.75rem 1.5rem;
+    background: #4caf50;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+  }
+  
+  .hero-button:hover {
+    background: #388e3c;
+  }
+  
+  /* Cards Section */
+  .cards-section {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    background: #ffffff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    min-width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  
+  .card p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 1.5rem;
+  }
+  
+  .card-button {
+    padding: 0.75rem 1.5rem;
+    background: #4caf50;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+  }
+  
+  .card-button:hover {
+    background: #388e3c;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .hero-content h1 {
+      font-size: 2rem;
+    }
+  
+    .hero-content p {
+      font-size: 1rem;
+    }
+  
+    .cards-section {
+      flex-direction: column;
+    }
+  
+    .card {
+      width: 100%;
+    }
+  }

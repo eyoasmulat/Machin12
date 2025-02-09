@@ -1,0 +1,107 @@
+/* Contact Container */  
+.contact-container {  
+  max-width: 600px;  
+  margin: 2rem auto;  
+  padding: 2rem;  
+  background: #f0f4ff; /* Light blue background */  
+  border-radius: 10px;  
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);  
+}  
+
+.contact-container h2 {  
+  text-align: center;  
+  margin-bottom: 1.5rem;  
+  color: #2c3e50; /* Darker shade for text */  
+  font-size: 2rem;  
+}  
+
+/* Success Message */  
+.success-message {  
+  text-align: center;  
+  padding: 2rem;  
+  background: #d1e7dd; /* Light green background */  
+  border-radius: 8px;  
+  color: #0f5132; /* Dark green text */  
+}  
+
+.success-message p {  
+  margin-bottom: 1rem;  
+}  
+
+.home-link {  
+  display: inline-block;  
+  padding: 0.5rem 1rem;  
+  background: #0056b3; /* Blue background */  
+  color: white;  
+  text-decoration: none;  
+  border-radius: 4px;  
+  transition: background 0.3s ease;  
+}  
+
+.home-link:hover {  
+  background: #004085; /* Darker blue for hover */  
+}  
+
+/* Contact Form */  
+.contact-form {  
+  display: flex;  
+  flex-direction: column;  
+  gap: 1rem;  
+}  
+
+.form-group {  
+  display: flex;  
+  flex-direction: column;  
+  gap: 0.5rem;  
+}  
+
+.form-group label {  
+  font-weight: 600; /* Bolder label */  
+  color: #34495e; /* Dark gray */  
+}  
+
+.form-group input,  
+.form-group textarea {  
+  padding: 0.75rem;  
+  border: 1px solid #ccc; /* Light gray border */  
+  border-radius: 6px;  
+  font-size: 1rem;  
+  transition: border-color 0.3s ease;  
+}  
+
+.form-group input:focus,  
+.form-group textarea:focus {  
+  border-color: #0056b3; /* Blue border on focus */  
+  outline: none;  
+}  
+
+.form-group textarea {  
+  resize: vertical;  
+}  
+
+/* Submit Button */  
+.submit-button {  
+  padding: 0.75rem;  
+  background: #0056b3; /* Blue background */  
+  color: white;  
+  border: none;  
+  border-radius: 6px;  
+  font-size: 1rem;  
+  cursor: pointer;  
+  transition: background 0.3s ease;  
+}  
+
+.submit-button:hover {  
+  background: #004085; /* Darker blue on hover */  
+}  
+
+/* Responsive Design */  
+@media (max-width: 768px) {  
+  .contact-container {  
+      padding: 1rem;  
+  }  
+
+  .contact-container h2 {  
+      font-size: 1.5rem;  
+  }  
+}
