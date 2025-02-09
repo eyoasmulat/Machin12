@@ -3,7 +3,6 @@ import joblib
 from fastapi import FastAPI
 from pydantic import BaseModel
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.staticfiles import StaticFiles
 from fastapi.responses import JSONResponse, FileResponse
 import os  # For environment variable management
 
@@ -27,7 +26,6 @@ app.add_middleware(
 )
 
 # Static files route
-app.mount("/static", StaticFiles(directory="static"), name="static")
 
 class InputData(BaseModel):
     Age: int
@@ -76,13 +74,6 @@ def predict(input_data: InputData):
     except Exception as e:
         print(f"Error: {str(e)}")  # Print the error to the console
         return JSONResponse(content={"error": str(e)}, status_code=500)
-
-@app.get("/")
-async def read_root():
-    try:
-        return FileResponse("static/index.html")
-    except FileNotFoundError:
-        return JSONResponse(content={"error": "index.html not found in static directory."}, status_code=404)
 
 # Ensure to bind the app to all interfaces (0.0.0.0) for production.
 if __name__ == "__main__":
