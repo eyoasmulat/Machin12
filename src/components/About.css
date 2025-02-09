@@ -8,6 +8,20 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
     color: #ffffff; /* Light text */
   }
+  .image-container {
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+    margin: 20px 0; /* Add some margin above and below the image */
+  }
+  
+  .profile-image {
+    width: 150px; /* Set the width of the image */
+    height: 150px; /* Set the height of the image */
+    border-radius: 50%; /* Make the image circular */
+    object-fit: cover; /* Ensure the image covers the area without stretching */
+    border: 3px solid #007bff; /* Add a border around the image */
+  }
   
   .about-container h2 {
     text-align: center;
