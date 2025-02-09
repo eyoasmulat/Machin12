@@ -41,3 +41,4 @@ The goal is to train a robust model that accurately predicts Injury_Risk based o
 3. Run each cell sequentially to execute the code.
 
 4. View results, including visualizations and model evaluation metrics.
+5. viste using this link https://machin12.onrender.com
