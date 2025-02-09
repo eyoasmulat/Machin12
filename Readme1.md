@@ -26,7 +26,16 @@ The goal is to train a robust model that accurately predicts Injury_Risk based o
 
 - 📜 `mach1.ipynb` – Jupyter Notebook containing the full implementation.
 - 📊 `des.csv` – The dataset used for training and testing.
+##input
 
+{
+    'Age': 30,
+    'Training_Hours_per_Week': 17,
+    'Previous_Injuries': 0,
+    'BMI': 20.3,
+    'Gender': "Male",
+    'Sport': "Basketball"
+}
 ## 🚀 How to Run
 
 1. Install dependencies:
